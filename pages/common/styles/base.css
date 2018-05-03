@@ -9,4 +9,71 @@ body{
   margin: 5em auto;
   background-color: rgba(0, 0, 0, 0.85);
   border-radius: 7px;
+  position: relative;
+}
+header nav ul{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+}
+header nav ul li{
+  display: inline-block;
+}
+header nav ul li a{
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  padding: 20px 35px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+header nav ul li a:after{
+  content: "";
+  height: 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  background-color: #17e7a4;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+header nav ul li.active a, header nav ul li a:hover{
+  color: #fff;
+}
+header nav ul li.active a:after, header nav ul li a:hover:after{
+  height: 100%;
+}
+header nav ul li a:hover{
+  text-decoration: none;
+}
+header li a span{
+  display: block;
+  text-align: center;
+}
+header li a .icon{
+  font-size: 22px;
+  position: relative;
+  transition: all 0.3s;
+  bottom: 0;
+}
+header li a .icon-text{
+  font-size: 20px;
+}
+header li.active a .icon, header li a:hover .icon{
+  bottom: 10px;
+}
+footer{
+  min-height: 64px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
