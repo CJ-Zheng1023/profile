@@ -28,6 +28,7 @@ header nav ul li a{
   position: relative;
   z-index: 1;
   margin-bottom: 10px;
+  transition: all 0.3s;
 }
 header nav ul li a:after{
   content: "";
@@ -76,4 +77,21 @@ footer{
   width: 100%;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
+}
+@media screen and (max-width: 768px){
+  .box{
+    margin: 3em 10px;
+  }
+  header nav ul li a{
+    padding: 10px 13px;
+  }
+  header li a .icon-text{
+    display: none;
+  }
+  header li a .icon{
+    font-size: 18px;
+  }
+  header li.active a .icon, header li a:hover .icon{
+    bottom: 0;
+  }
 }
