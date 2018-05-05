@@ -5,11 +5,9 @@ body{
 }
 .box{
   max-width: 760px;
-  min-height: 600px;
   margin: 5em auto;
   background-color: rgba(0, 0, 0, 0.85);
   border-radius: 7px;
-  position: relative;
 }
 header nav ul{
   padding: 0;
@@ -71,12 +69,43 @@ header li.active a .icon, header li a:hover .icon{
 footer{
   min-height: 64px;
   background-color: #000;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
+}
+.content{
+  color: #fff;
+  padding: 20px 80px;
+}
+ul, li{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+.list-item{
+  position: relative;
+  padding-left: 80px;
+  padding-bottom: 20px;
+}
+.list-item .item-icon{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  text-align: center;
+}
+.list-item .item-icon i{
+  color: #17e7a4;
+}
+.list-item .item-body .item-title{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.list-item .item-body .item-content p{
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 @media screen and (max-width: 768px){
   .box{
@@ -93,5 +122,9 @@ footer{
   }
   header li.active a .icon, header li a:hover .icon{
     bottom: 0;
+  }
+  .content{
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }

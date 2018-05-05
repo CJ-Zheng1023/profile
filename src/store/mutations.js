@@ -2,13 +2,13 @@ export default {
   queryDocument (state, document) {
     state.document = document
   },
-  queryCompany (state, company) {
-    state.company = company
+  queryCompany (state, companyList) {
+    state.companyList = companyList
   },
-  queryExperience (state, experience) {
-    state.experience = experience
+  queryExperience (state, experiences) {
+    state.experiences = experiences
   },
-  querySkill (state, skill) {
-    state.skill = skill
+  querySkill (state, skills) {
+    state.skills = skills
   }
 }

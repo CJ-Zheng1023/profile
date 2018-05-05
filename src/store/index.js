@@ -6,7 +6,10 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state () {
     return {
-      document: {}
+      document: {},
+      companyList: {},
+      experiences: {},
+      skills: {}
     }
   },
   mutations,
