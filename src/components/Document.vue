@@ -5,6 +5,7 @@
     </div>
     <h1>{{ document.name }}</h1>
     <h2><i class="fa fa-birthday-cake"></i>{{ document.birthday }}</h2>
+    <h3>{{ document.email }}</h3>
     <p>{{ document.introduction }}</p>
   </div>
 </template>
@@ -41,9 +42,11 @@ export default {
     margin-top: 25px;
     margin-bottom: 30px;
   }
-  h2{
+  h2, h3 {
     text-align: center;
     font-size: 14px;
+  }
+  h3{
     margin-bottom: 30px;
   }
   p{
